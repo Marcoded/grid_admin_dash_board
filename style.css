@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Athiti', sans-serif;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  }
+
+
+
+:root {
+    --dark-black:rgb(23, 23, 23);
+    --dark-grey:rgb(68, 68, 68);
+    --red:rgb(218, 0, 55);
+    --light-gray: rgb(237, 237, 237);
+
+}
+
+.page-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows:1fr 5fr ;
+    
+}
+
+.full-header {
+   grid-column: 2/3;
+   background-color: blueviolet;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   background-color: var(--dark-black);
+}
+
+.full-side-bar {
+    background-color: rgb(30, 189, 189);
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 7vh 30vh 30vh;
+    background-color: var(--dark-grey);
+}
+
+.main-content {
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 5% 95%;
+    background-color: var(--light-gray);
+    
+    
+}
+
+.logo-dash-board-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    border: 1px solid gray;
+    align-items: center;
+}
+
+
+.bottom-header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+    border: 1px solid gray;
+    align-items: center;
+}
+
+.action-btn {
+    width: 7vw;
+    height: 4vh;
+    border-radius: 10px;
+    background-color: var(--red);
+
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2vh;
+    justify-items: center;
+    align-content: center;
+    color: var(--light-gray);
+    align-items: center;
+}
+
+.right-side-container {
+    
+    display: grid;
+    grid-template-rows:4fr 1fr 4fr;
+}
+
+.cards-container  h3 {
+    color: var(--red);
+    
+}
+
+.text-search {
+    height: 3vh;
+    border-radius: 10px;
+}
+
+.annoucement-container {
+    height: 30vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.one-card {
+    height: 20vh;
+    background-color: var(--dark-black);
+    border-radius: 10px;
+    
+}
+
+h2 {
+    color: var(--red);
+    font-weight: bold;
+}
