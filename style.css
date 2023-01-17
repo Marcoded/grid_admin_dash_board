@@ -6,6 +6,7 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
     font-family: 'Athiti', sans-serif;
+    
   }
   
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -37,7 +38,8 @@ html {
 :root {
     --dark-black:rgb(23, 23, 23);
     --dark-grey:rgb(68, 68, 68);
-    --red:rgb(218, 0, 55);
+     --red:rgb(218, 0, 55); 
+   
     --light-gray: rgb(237, 237, 237);
 
 }
@@ -45,7 +47,7 @@ html {
 .page-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 7fr;
     grid-template-rows:1fr 5fr ;
     
 }
@@ -64,6 +66,7 @@ html {
     display: grid;
     grid-template-rows: 7vh 30vh 30vh;
     background-color: var(--dark-grey);
+    
 }
 
 .main-content {
@@ -76,15 +79,20 @@ html {
     
 }
 
-.logo-dash-board-and-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.profileP {
+    background-image: url(/PP.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    justify-self: center;
 }
 
 .top-header {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 6fr 0.5fr 1fr 2fr;
     border: 1px solid gray;
     align-items: center;
 }
@@ -108,18 +116,18 @@ html {
 .cards-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 2vh;
-    justify-items: center;
-    align-content: center;
+    grid-template-rows: repeat(3,1fr);
+    height: 100%;
     color: var(--light-gray);
-    align-items: center;
+    justify-items: center;
+    
+    
 }
 
 .right-side-container {
     
     display: grid;
-    grid-template-rows:4fr 1fr 4fr;
+    grid-template-rows:4fr 0.5fr 4fr;
 }
 
 .cards-container  h3 {
@@ -133,16 +141,37 @@ html {
 }
 
 .annoucement-container {
-    height: 30vh;
-    width: 20vw;
+    height: 90%;
+    width: 80%;
     background-color: white;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: start;
+}
+
+.annoucement-container h3 {
+    font-weight: bold;
+}
+
+.line {
+    border-top: 1px var(--dark-grey) solid;
+    padding-bottom: 1rem;
+}
+
+.utility-annoncement-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .one-card {
-    height: 20vh;
+    height: 17vh;
+    width: 25vw;
     background-color: var(--dark-black);
     border-radius: 10px;
+    align-self: center;
+    
     
 }
 
@@ -150,3 +179,147 @@ h2 {
     color: var(--red);
     font-weight: bold;
 }
+
+
+.logo-dash-board-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+.dash-board-logo {
+    
+    background-image:url(/svgs/vector-square.svg);
+    background-repeat: no-repeat; /* this will make the image to not repeat itself*/
+    height: 50px;
+    width: 50px;
+    filter: invert(10%) sepia(94%) saturate(4870%) hue-rotate(334deg) brightness(100%) contrast(120%)
+}
+
+.dash-board-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.little-icon {
+    background-repeat: no-repeat; /* this will make the image to not repeat itself*/
+    height: 30px;
+    width: 30px;
+    filter: invert(10%) sepia(94%) saturate(4870%) hue-rotate(334deg) brightness(100%) contrast(120%)
+}
+
+.card-icon {
+    background-repeat: no-repeat; /* this will make the image to not repeat itself*/
+    height: 20px;
+    width: 20px;
+    filter: invert(10%) sepia(94%) saturate(4870%) hue-rotate(334deg) brightness(100%) contrast(120%)
+}
+
+.card-icon {
+    
+}
+
+.icon-and-name .icon-name {
+    padding-left: 1rem;
+    font-weight: bold;
+    
+}
+
+.icon-container {
+    display: flex;
+    justify-content: right;
+}
+
+.icon-and-name{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    align-items: center;
+    
+}
+
+.account-name {
+    color: var(--light-gray);
+    font-size: 1.5rem;
+}
+
+.big-profile-P {
+    background-image: url(/PP.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.annoucement-container p {
+    font-size: 0.8rem;
+}
+
+
+#bottom-menu {
+    grid-row: 3/6;
+}
+
+#home{
+background-image: url(/svgs/home.svg);
+}
+#profile{
+    background-image: url(/svgs/account-circle.svg)
+}
+#message{
+    background-image: url(/svgs/message.svg)
+}
+#tasks{
+    background-image: url(/svgs/calendar-check.svg)
+}
+#communities{
+    background-image: url(/svgs/account-group.svg)
+}
+#history{
+background-image: url(/svgs/alarm.svg);
+}
+
+#settings{
+    background-image: url(/svgs/cog.svg)
+}
+#support{
+    background-image: url(/svgs/chat-question.svg)
+}
+
+#like{
+    background-image: url(/svgs/star-plus-outline.svg)
+}
+
+#open{
+    background-image: url(/svgs/eye-plus.svg)
+}
+
+#share{
+    background-image: url(/svgs/share-variant.svg)    
+}
+
+#privacy{
+    background-image: url(/svgs/shield-half-full.svg)    
+}
+
+#loupe{
+    background-image: url(/svgs/magnify-plus-outline.svg);
+    justify-self: center;
+}
+
+#notification-bell {
+    background-image: url(/svgs/bell.svg);
+    justify-self: center;
+}
+
+
