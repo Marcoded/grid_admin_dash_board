@@ -1,15 +1,19 @@
 
-
+*{
+    font-family: 'Athiti', sans-serif;
+}
 
 
 html {
     box-sizing: border-box;
     font-size: 16px;
+    
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
     font-family: 'Athiti', sans-serif;
+    
     
   }
   
@@ -158,6 +162,7 @@ html {
     flex-direction: column;
     justify-items: center;
     justify-content: start;
+    padding: 1rem;
 }
 
 .annoucement-container h3 {
@@ -179,7 +184,9 @@ html {
     
     padding-bottom: 1rem;
     color: var(--accent-green);
-    height: 1vh;
+    border-top: 1px solid var(--accent-green);
+    height: 0px;
+    margin-top: 0.5rem;
 }
 
 .utility-annoncement-container {
@@ -187,14 +194,36 @@ html {
     flex-direction: column;
 }
 
+#trending-container {
+    
+    display: flex;
+    flex-direction: column;
+    color: var(--new-white);
+}
+
+.profile {
+    display: flex;
+    justify-content: left;
+    
+    
+}
+
+.profile-at {
+    font-weight: bold;
+}
+
 .one-card {
-    height: 17vh;
-    width: 25vw;
+    height: 60%;
+    width: 90%;
     background-color: var(--mid-grey);
     border-radius: 10px;
     align-self: center;
+    padding: 0.5rem;
     
-    
+}
+
+.one-card p, .one-card h3 {
+   
 }
 
 h2 {
@@ -284,9 +313,9 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 50%;
-    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
     justify-self: center;
 }
 
@@ -295,17 +324,40 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 50%;
-    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
     justify-self: center;
+    ;
+}
+
+.big-name {
+    font-size: 2rem;
 }
 
 .annoucement-container p {
     font-size: 0.8rem;
     color: var(--new-white);
+
     
 }
+
+.trending-profile-p {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    justify-self: center;
+
+}
+
+.profile-name-and-at {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
 
 
 #bottom-menu {
@@ -367,5 +419,22 @@ background-image: url(./svgs/alarm.svg);
     background-image: url(./svgs/bell.svg);
     justify-self: center;
 }
+#firstpp {
+    background-image: url(/svgs/avatar-svgrepo-com.svg);
+    
+}
+
+#secondpp {
+    background-image: url(./svgs/avatar-svgrepo-com\ \(2\).svg);
+}
+
+#thirdpp {
+    background-image: url(./svgs/avatar-svgrepo-com\ \(3\).svg);
+}
+
+#fourthpp {
+    background-image: url(./svgs/avatar-svgrepo-com\ \(4\).svg);
+}
+
 
 
